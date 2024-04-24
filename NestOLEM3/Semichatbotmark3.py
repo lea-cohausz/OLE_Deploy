@@ -16,8 +16,8 @@ csv_files = glob.glob(pattern)
 latest_file = max(csv_files, key=lambda x: x.split(".")[0].split("_")[-1])
 data = pd.read_csv(latest_file)
 
-data=data[data["type"]=="grundständig"]
-data=data[data["code"]==8]
+#data=data[data["type"]=="grundständig"]
+#data=data[data["code"]==8]
 datafilter=data
 
 osadata=pd.read_excel('OSA.xlsx', nrows=136)
